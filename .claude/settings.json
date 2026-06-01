@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//tmp/**)",
+      "Read(//c/tmp/**)",
+      "Bash(pkill -f \"vite\")",
+      "Bash(git fetch *)",
+      "Bash(gh auth *)",
+      "Bash(node -e ' *)",
+      "Bash(npm run *)",
+      "Bash(timeout 25 bash -c 'until curl -sf http://localhost:5173 >/dev/null 2>&1; do sleep 1; done')",
+      "Bash(git init *)",
+      "Bash(git add *)"
+    ]
+  }
+}
